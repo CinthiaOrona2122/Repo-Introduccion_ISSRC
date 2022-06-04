@@ -1,5 +1,6 @@
 document.write("<h1>Mi codigo</h1>");
 
+//Sumar 2 numeros
 // var nombre = prompt("Ingrese su nombre");
 // var num1 = parseInt(prompt("Ingrese un numero"));
 // var num2 = parseInt(prompt("Ingrese otro numero"));
@@ -12,6 +13,7 @@ document.write("<h1>Mi codigo</h1>");
 // document.write(`<p>La suma es: ${suma}</p>`);
 
 
+//Pedir notas y mostrar el promedio
 var nota1 = parseInt(prompt("Ingrese la nota 1"));
 var nota2 = parseInt(prompt("Ingrese la nota 2"));
 var nota3 = parseInt(prompt("Ingrese la nota 3"));

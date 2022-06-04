@@ -1,3 +1,4 @@
+//Pedir el sueldo y las horas extras
 var sueldo = parseFloat(prompt("Ingrese su sueldo"));
 var cantHoras = parseInt(prompt("Ingrese la cantidad de horas extras trabajadas"));
 var cantExtras = 3000;
