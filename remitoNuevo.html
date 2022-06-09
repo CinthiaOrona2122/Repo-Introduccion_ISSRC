@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remito</title>
+</head>
+<body>
+
+  <div style="position: center;">
+    <h1>Remito<h1>
+        <h2>"Libreria Nuno"</h2>
+  </div>
+
+  <script>
+    document.write("<h4>");
+    var nombre = prompt("Ingrese su nombre");
+    document.write("<u>Nombre del Cliente:</u>" + nombre + ".<br>");
+    document.write("<br>");
+
+    var direccion = prompt("Ingrese su direccion");
+    document.write("direccion del Cliente:" + direccion + ".<br>");
+
+    var articulo1 = prompt("Ingrese articulo 1");
+    var precio1 = parseInt(prompt("Ingrese el valor del articulo1"));
+    document.write("<br>");
+    document.write(
+      `Nombre del articulo: ${articulo1},<br> <u>precio:</u> $ ${precio1}` + ".<br>"
+    );
+
+    var articulo2 = prompt("Ingrese articulo 2");
+    var precio2 = parseInt(prompt("Ingrese el valor del articulo2"));
+    document.write("<br>");
+    document.write(
+      `Nombre del articulo: ${articulo2},<br> <u>precio:</u> $ ${precio2}` + ".<br>"
+    );
+
+    var articulo3 = prompt("Ingrese articulo 3");
+    var precio3 = parseInt(prompt("Ingrese el valor del articulo3"));
+    document.write("<br>");
+    document.write(
+      `Nombre del articulo: ${articulo3},<br> <u>precio:</u> $ ${precio3}` + ".<br>"
+    );
+
+    var articulo4 = prompt("Ingrese articulo 4");
+    var precio4 = parseInt(prompt("Ingrese el valor del articulo4"));
+    document.write("<br>");
+    document.write(
+      `Nombre del articulo: ${articulo4},<br> <u>precio:</u> $ ${precio4}` + ".<br>"
+    );
+
+    var articulo5 = prompt("Ingrese articulo 5");
+    var precio5 = parseInt(prompt("Ingrese el valor del articulo5"));
+    document.write("<br>");
+    document.write(
+      `Nombre del articulo: ${articulo5},<br> <u>precio:</u> $ ${precio5}` + ".<br>"
+    );
+
+    var subtotal = precio1 + precio2 + precio3 + precio4 + precio5;
+    document.write("El subtotal de la compra es:$" + subtotal + ".<br>");
+
+    var forma_de_pago = parseInt(
+      prompt("Ingrese su forma de pago, 1 efectivo, 2 tarjeta, 3 cta. cte")
+    );
+
+    var descuento = subtotal * 0.05;
+    var interes1 = subtotal * 0.2;
+    var interes2 = subtotal * 0.1;
+
+    function formaDepagos(forma_de_pago) {
+      if (forma_de_pago == 1) {
+        var total = subtotal - descuento;
+        document.write(`El total en Efectivo con descuento es:$ ${total} .<br>`);
+        document.write("<br>");
+      } else if (forma_de_pago == 2) {
+        var total = interes1 + subtotal;
+        document.write(`El total con intereses por Tarjeta es:$ ${total}.<br>`);
+        document.write("<br>");
+      } else if (forma_de_pago == 3) {
+        var total = interes2 + subtotal;
+        document.write(`El total con intereses por Cta. Cte. es:$ ${total}.<br>`);
+        document.write("<br>");
+      } else {
+        document.write(`Forma de pago: No seleccionada.<br>`);
+      }
+    }
+    formaDepagos(forma_de_pago);
+    document.write("</h4>")
+  </script>
+</body>
+
+</html>
