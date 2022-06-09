@@ -12,7 +12,6 @@ pedirEdad(edad);
 
 // 2)Hacer un algoritmo que imprima los primeros 10 numeros de la tabla del 3.
 
-var tablaMultiplicar = int(prompt("Ingrese el numero que desea multiplicar"));
 var numero = parseInt(prompt("Ingrese un numero"));
 
 function laTableTres(numero) {
