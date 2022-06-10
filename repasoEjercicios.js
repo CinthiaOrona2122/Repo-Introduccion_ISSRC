@@ -23,8 +23,8 @@ laTableTres(numero);
 
 // 3)Cree un algoritmo que lea dos numeros reales y determine cuál de ellos es el mayor, cuál el menor y cuáles son iguales.
 
-var numero1 = prompt("Ingrese el primer numero");
-var numero2 = prompt("Ingrese el segundo numero");
+var numero1 = parseInt(prompt("Ingrese el primer numero"));
+var numero2 = parseInt(prompt("Ingrese el segundo numero"));
 
 function cualEsMayor(numero1, numero2) {
   if (numero1 > numero2) {
@@ -78,19 +78,19 @@ do {
 
 // VERSION 2
 
-// var numero1 = parseInt(prompt("Ingrese el primer numero"));
-// var numero2 = parseInt(prompt("Ingrese el segundo numero"));
+var numero1 = parseInt(prompt("Ingrese el primer numero"));
+var numero2 = parseInt(prompt("Ingrese el segundo numero"));
 
-// function calcular(numero1, numero2) {
+function calcular(numero1, numero2) {
 
-//   var suma = numero1 + numero2;
-//   var resta = numero1 - numero2;
-//   var multiplicacion = numero1 * numero2;
-//   var division = numero1 / numero2;
+  var suma = numero1 + numero2;
+  var resta = numero1 - numero2;
+  var multiplicacion = numero1 * numero2;
+  var division = numero1 / numero2;
 
-//   document.write("La suma es: " + suma + "<br>");
-//   document.write("La resta es: " + resta + "<br>");
-//   document.write("La multiplicacion es: " + multiplicacion + "<br>");
-//   document.write("La division es: " + division + "<br>");
-// }
-// calcular(numero1, numero2);
+  document.write("La suma es: " + suma + "<br>");
+  document.write("La resta es: " + resta + "<br>");
+  document.write("La multiplicacion es: " + multiplicacion + "<br>");
+  document.write("La division es: " + division + "<br>");
+}
+calcular(numero1, numero2);
