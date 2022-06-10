@@ -1,6 +1,6 @@
 // 1)Hacer un algoritmo que valide si una persona es mayor de edad o no.
 
-var edad = prompt("Ingrese su edad");
+var edad = parseInt(prompt("Ingrese su edad"));
 function pedirEdad(edad) {
   if (edad >= 18) {
     alert("Sos mayor de edad");
